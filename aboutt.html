@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoeStyle | About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .logo span {
+      color: #e63946;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, #fff5f5 40%, #ffffff 60%);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #111;
+    }
+
+    .hero p {
+      color: #555;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* About Section */
+    .about {
+      padding: 3rem 10%;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Mission and Vision */
+    .mission {
+      background-color: #f8f9fb;
+      padding: 3rem 10%;
+      text-align: center;
+    }
+
+    .mission h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .mission p {
+      color: #444;
+      line-height: 1.8;
+      max-width: 850px;
+      margin: 0 auto 2rem auto;
+    }
+
+    /* Team Section */
+    .team {
+      padding: 3rem 8%;
+      background-color: #fff;
+    }
+
+    .team h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .member {
+      background-color: #f8f9fb;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-6px);
+    }
+
+    .member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .member h3 {
+      font-size: 1.1rem;
+      color: #111;
+    }
+
+    .member p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #e63946;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Shoe<span>Style</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="menns.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="aboutt.html">About</a></li>
+        <li><a href="comt.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>About ShoeStyle</h1>
+    <p>Where comfort meets fashion — redefining the way you walk.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>
+      ShoeStyle is a modern footwear brand committed to blending comfort, durability, and contemporary style. Founded in 2020, our mission is to provide shoes that not only look great but also feel amazing to wear. From trendy sneakers to classy formals, our products are designed for people who value both fashion and function.
+    </p>
+  </section>
+
+  <!-- Mission and Vision -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>To inspire confidence and comfort through stylish footwear crafted with passion and precision.</p>
+
+    <h2>Our Vision</h2>
+    <p>To become the most loved footwear brand in India, known for innovation, quality, and sustainability.</p>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+        <h3>Rahul Mehta</h3>
+        <p>Founder & CEO</p>
+      </div>
+
+      <div class="member">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+        <h3>Anita Sharma</h3>
+        <p>Creative Director</p>
+      </div>
+
+      <div class="member">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="">
+        <h3>Rohan Singh</h3>
+        <p>Marketing Head</p>
+      </div>
+
+      <div class="member">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+        <h3>Priya Desai</h3>
+        <p>Product Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 <span>ShoeStyle</span>. All Rights Reserved.
+  </footer>
+</body>
+</html>
