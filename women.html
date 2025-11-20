@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoeStyle | Women's Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fef8f8;
+      color: #222;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .logo span {
+      color: #e63946;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(120deg, #fff0f0 50%, #ffffff 50%);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      color: #111;
+    }
+
+    .banner p {
+      color: #555;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    /* Product Section */
+    .products {
+      padding: 3rem 6%;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      font-size: 1.1rem;
+      color: #111;
+      margin-bottom: 0.3rem;
+    }
+
+    .price {
+      color: #e63946;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .card-body a {
+      display: inline-block;
+      background-color: #e63946;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .card-body a:hover {
+      background-color: #ff5252;
+    }
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #e63946;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Shoe<span>Style</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="menns.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="aboutt.html">About</a></li>
+        <li><a href="comt.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Women’s Collection</h1>
+    <p>Elegance in every step — explore our latest women’s shoes.</p>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products">
+    <h2>Trending Women’s Shoes</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="ws.jpg" alt="">
+        <div class="card-body">
+          <h3>Rose Gold Heels</h3>
+          <p class="price">₹3,299</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws1.jpg" alt="">
+        <div class="card-body">
+          <h3>Classic White Sneakers</h3>
+          <p class="price">₹2,899</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws2.jpg" alt="">
+        <div class="card-body">
+          <h3>Elegant Ballet Flats</h3>
+          <p class="price">₹2,499</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws3.jpg" alt="">
+        <div class="card-body">
+          <h3>Comfy Slip-Ons</h3>
+          <p class="price">₹2,199</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws4.jpg" alt="">
+        <div class="card-body">
+          <h3>Stylish Sandals</h3>
+          <p class="price">₹2,699</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws5.jpg" alt="">
+        <div class="card-body">
+          <h3>Sporty Runners</h3>
+          <p class="price">₹3,099</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+          <div class="card">
+        <img src="ws6.jpg" alt="">
+        <div class="card-body">
+          <h3>Elegant Ballet Flats</h3>
+          <p class="price">₹2,499</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws7.jpg" alt="">
+        <div class="card-body">
+          <h3>Comfy Slip-Ons</h3>
+          <p class="price">₹2,199</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws8.jpg" alt="">
+        <div class="card-body">
+          <h3>Stylish Sandals</h3>
+          <p class="price">₹2,699</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws9.jpg" alt="">
+        <div class="card-body">
+          <h3>Sporty Runners</h3>
+          <p class="price">₹3,099</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws10.jpg" alt="">
+        <div class="card-body">
+          <h3>Sporty Runners</h3>
+          <p class="price">₹4,099</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws11.jpg" alt="">
+        <div class="card-body">
+          <h3>Sporty Runners</h3>
+          <p class="price">₹3,099</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="ws12.jpg" alt="">
+        <div class="card-body">
+          <h3>Classic White Sneakers</h3>
+          <p class="price">₹2,899</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws13.jpg" alt="">
+        <div class="card-body">
+          <h3>Elegant Ballet Flats</h3>
+          <p class="price">₹2,499</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws5.jpg" alt="">
+        <div class="card-body">
+          <h3>Comfy Slip-Ons</h3>
+          <p class="price">₹2,199</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ws6.jpg" alt="">
+        <div class="card-body">
+          <h3>Stylish Sandals</h3>
+          <p class="price">₹2,699</p>
+          <a href="cart.html">Add to Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 <span>ShoeStyle</span>. All Rights Reserved.
+  </footer>
+</body>
+</html>
